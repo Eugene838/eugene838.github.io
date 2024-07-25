@@ -28,7 +28,7 @@ export class ExperienceComponent implements OnInit {
     endDate: "Current",
     Project: ["Ticket handling to meet SLA",
       "Liaise with end user’s query",
-      "Translate technical jargon into plain language and vice versa.",
+      "Translate technical jargon into plain language and vice versa for end users.",
       "Ensure 24/7 on-call support coverage as needed.",
       "Perform system and application troubleshooting to identify root causes."]
   }
