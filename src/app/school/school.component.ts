@@ -18,8 +18,8 @@ export class SchoolComponent implements OnInit {
   {
     school: "NCS Pte Ltd",
     Job: "L2 Production Support",
-    FYP: ["Ticket handling for SLA",
-      "Functional enquiry to end users",
+    FYP: ["SecureConnect Aug 2025 - Current",
+      "SMMTS Feb 2023 - July 2025",
       "Translate technical jargon into plain language and vice versa.",
       "Root cause analysis",
     ],
