@@ -1,7 +1,19 @@
 .skills_container img {
 	display: block;
-	height: 64px;
-	margin: 0 auto;
+	height: 38px;
+	margin: 0;
 	object-fit: contain;
-	width: 64px;
+	opacity: 1;
+	pointer-events: none;
+	position: relative;
+	z-index: 2;
+	visibility: visible;
+	width: 38px;
 }
+
+#python {
+	overflow: visible;
+	position: relative;
+	z-index: 4;
+}
+

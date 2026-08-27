@@ -1,13 +1,38 @@
+:host > h1 {
+    display: block;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+    width: 100%;
+}
+
+:host {
+    display: block;
+    margin-left: -120px;
+    width: calc(100% + 120px);
+}
+
 .container {
     background-color: inherit;
-    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100% !important;
 }
 
 .content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
-    border-radius: 6px;
+    border-radius: 24px;
     filter: drop-shadow(10px 15px 3px #202020);
     border-style: solid;
+}
+
+@media (max-width: 680px) {
+    :host {
+        margin-left: 0;
+        width: 100%;
+    }
 }
