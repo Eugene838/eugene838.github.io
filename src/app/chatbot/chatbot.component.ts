@@ -59,8 +59,24 @@ export class ChatbotComponent {
   private localReply(question: string): string {
     const normalizedQuestion = question.toLowerCase();
 
+    if (normalizedQuestion.includes('2017')) {
+      return '- <strong><u>July 2017 - December 2017</u></strong>: Intern at DigiFort\n- Digitalized the leave-taking process using Java and MySQL\n- Built Windows Forms functionality for creating, reading, updating, and deleting leave records\n- Added leave and pro-rated leave calculations';
+    }
+
+    if (normalizedQuestion.includes('2022') || normalizedQuestion.includes('2023') || normalizedQuestion.includes('2024')) {
+      return '- <strong><u>February 2022 - July 2025</u></strong>: Software Engineering L2 Production Support at NCS for SMMTS\n- Handled support tickets within service-level agreements\n- Troubleshot applications and identified and fixed bugs\n- Performed root-cause analysis\n- Communicated issue progress with stakeholders';
+    }
+
+    if (normalizedQuestion.includes('august 2025') || normalizedQuestion.includes('onwards')) {
+      return '- <strong><u>August 2025 - Present</u></strong>: Support Engineer at NCS for SecureConnect\n- Analyzed logs and troubleshot middleware on Linux environments\n- Integrated external applications with middleware services\n- Developed an AWS SES SMTP extension for scalable and secure automated email delivery\n- Performed root-cause analysis and resolved production issues';
+    }
+
+    if (normalizedQuestion.includes('2025')) {
+      return '- <strong><u>February 2022 - July 2025</u></strong>: Software Engineering L2 Production Support at NCS for SMMTS\n  - Handled tickets and troubleshot applications\n  - Fixed bugs and communicated with stakeholders\n- <strong><u>August 2025 - Present</u></strong>: Support Engineer at NCS for SecureConnect\n  - Analyzed Linux logs and troubleshot middleware\n  - Integrated external applications with middleware\n  - Developed an AWS SES SMTP extension for automated email delivery';
+    }
+
     if (normalizedQuestion.includes('skill') || normalizedQuestion.includes('technology')) {
-      return 'Eugene lists Java, PHP, JavaScript, MySQL, Python, HTML, Angular, and Linux as skills.';
+      return 'Eugene\'s skills:\n- <strong>Java</strong>\n- <strong>PHP</strong>\n- <strong>JavaScript</strong>\n- <strong>MySQL</strong>\n- <strong>Python</strong>\n- <strong>HTML</strong>\n- <strong>Angular</strong>\n- <strong>Linux</strong>';
     }
 
     if (normalizedQuestion.includes('experience') || normalizedQuestion.includes('work')) {

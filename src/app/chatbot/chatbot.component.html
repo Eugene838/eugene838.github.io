@@ -14,7 +14,8 @@
 
     <div class="chat-messages" aria-live="polite">
         <div *ngFor="let message of messages" class="message" [class.user-message]="message.role === 'user'" [class.assistant-message]="message.role === 'assistant'">
-            {{ message.content }}
+            <span *ngIf="message.role === 'user'">{{ message.content }}</span>
+            <span *ngIf="message.role === 'assistant'" [innerHTML]="message.content"></span>
         </div>
         <div *ngIf="isLoading" class="message assistant-message typing">Thinking...</div>
     </div>
