@@ -16,3 +16,5 @@ body { max-width: none; width: 100%; }
 .project-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 28px; }
 .project-links a { color: #0d5c63; font-size: 14px; font-weight: 700; text-decoration: none; border-bottom: 1px solid currentColor; }
 .project-links a:hover, .project-links a:focus-visible { color: #083f44; }
+.message a { color: #0d5c63; font-weight: 700; text-decoration: underline; }
+.user-message a { color: inherit; }
