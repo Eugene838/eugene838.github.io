@@ -22,7 +22,7 @@ const roles = [
 const projects = [{
   title: 'Every Cent Count',
   type: 'Personal finance tracker',
-  description: 'A full-stack finance tracker for logging expenses, managing budgets, and making daily spending easier to understand.',
+  description: 'A full-stack finance tracker for logging expenses, managing budgets.',
   tech: ['JavaScript', 'Supabase', 'Vercel'],
   liveUrl: 'https://everycentcount.vercel.app/demo',
   sourceUrl: 'https://github.com/Eugene838/Every-cent-count',
